@@ -12,7 +12,7 @@ for i in range(len(b)):  # 문자열 watermelon의 길이를 범위로 설정하
 
 # 짝수의 합_ 여러가지 방법
 def solution(n):
-    return sum([x for x in range(2, n+1, 2)])
+    return sum([x for x in range(2, n+1, 2)])       # 리스트 comprehension
 
 
 def solutions2(n):
