@@ -30,6 +30,7 @@
 #     print(f'#{test_case} {new}')
 
 
+# 회선1_진원님 코드
 # def count_palindromes(test, length):
 #     count = 0
 #     for i in range(8):
@@ -59,6 +60,7 @@
 #     print("#{} {}".format(i, count))
 
 
+# 이중for문 공부중..
 for i in range(7):
     for j in range(i + 4):
         print('*', end='')
