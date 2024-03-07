@@ -252,7 +252,9 @@ for i in m:
 
 
 # 백준_색종이
+
 paper = [[0 for i in range(100)] for j in range(100)]  # 0으로 초기화된 2차원 종이 선언
+
 
 N = int(input())
 # 한줄씩 입력되므로. 다시 안 쓸 거면 데이터 입력받을 때는 (변수 선언 말고) _써도 됨    #오류의 원인: N번 받아야.
@@ -264,7 +266,7 @@ for _ in range(N):
             paper[x+i][y+j] = 1  # 오류의 원인: paper[i][j]로 했었음.
 
 ans = 0
-for i in range(100):
+for i in range(100):  # 0~99
     for j in range(100):
         ans += paper[i][j]
 
@@ -298,3 +300,10 @@ while start <= end:
         end = mid-1
 
 print(ans)
+
+
+a = set([1, 4, 3, 7, 5])
+
+print(a)
+
+# 출력: {1, 3, 4, 5, 7}
