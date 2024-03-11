@@ -125,31 +125,32 @@ print(solution([4,6,8,28,5,95,63]))
 
 
 
+
 #알고리즘 문제
-# #N과 M
-# N, M = map(int, input().split())
-# ans = []
-#
-# def solution():
-#     # a = [i for i in range(1,N+1)]
-#     if len(ans) == M:
-#         # print(f'프린트닷!')
-#         print(' '.join(map(str,ans)))        #map(func, iterable)
-#         return
-#
-#     for j in range(1, N+1):
-#         if j not in ans:
-#             # print(f'새로운 선택 전의 >> {ans}')
-#             ans.append(j)
-#             # print(f'append함!')
-#             # print(ans)
-#             # print(f'이제 함수호출~')
-#             solution()
-#             # print(f'재귀 후의 >> {ans}')
-#             ans.pop()
-#             # print(f'pop이후 >> {ans}')
-#
-# solution()
+#N과 M
+N, M = map(int, input().split())
+ans = []
+
+def solution():
+    # a = [i for i in range(1,N+1)]
+    if len(ans) == M:
+        # print(f'프린트닷!')
+        print(' '.join(map(str,ans)))        #map(func, iterable)
+        return
+
+    for j in range(1, N+1):
+        if j not in ans:
+            # print(f'새로운 선택 전의 >> {ans}')
+            ans.append(j)
+            # print(f'append함!')
+            # print(ans)
+            # print(f'이제 함수호출~')
+            solution()
+            # print(f'재귀 후의 >> {ans}')
+            ans.pop()
+            # print(f'pop이후 >> {ans}')
+
+solution()
 
 
 #연산자 끼워넣기
@@ -161,7 +162,6 @@ pl,mi,mul,div = map(int, input().split())
 
 max_val = -sys.maxsize
 min_val = sys.maxsize
-# print(max_val, min_val)
 
 def dfs(cum_val, num, pl, mi, mul, div):
     global max_val, min_val
