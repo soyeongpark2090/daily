@@ -1,15 +1,15 @@
 # swea 거듭제곱
-# def solution(a, n):
-#     if n == 1:
-#         return a
-#     else:
-#         return a*solution(a, n-1)
+def solution(a, n):
+    if n == 1:
+        return a
+    else:
+        return a*solution(a, n-1)
 
 
-# for i in range(1, 11):
-#     test_case = int(input())
-#     x, y = map(int, input().split())
-#     print(f'#{test_case} {solution(x,y)}')
+for i in range(1, 11):
+    test_case = int(input())
+    x, y = map(int, input().split())
+    print(f'#{test_case} {solution(x,y)}')
 
 
 # #문자열 거울상
